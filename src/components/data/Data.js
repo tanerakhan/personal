@@ -49,7 +49,7 @@ render(){
 <SocialIcon url={linkedinSocial}/>
 <SocialIcon url={this.state.users.html_url}/>
 </div>
-            </div>
+</div>
         )
     }
 }
