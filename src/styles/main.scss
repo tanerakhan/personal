@@ -1,0 +1,57 @@
+@import './reset';
+#root{
+    display: $flex;
+    justify-content: $center;
+    align-items: $center;
+        .wrapper{
+            display: $flex;
+            justify-content: $center;
+            align-items: $center;
+            height: $full / 2;
+            min-height: $on * 35;
+            width: $full;
+            max-width: $full / 4;
+            background-color: rgba(209, 209, 209, 0.4);
+            border-radius: 3px;
+            border: 1px #e9e9e9 solid;
+            padding: $on * 1;
+            overflow: hidden;
+                .getData{
+                    .avatar{
+                        img{
+                            margin:auto;
+                            border-radius: $full / 2;
+                        }
+                    }
+                    .personInfo{
+                        margin: $on * 2 $zero;
+                        background-color:$white;
+                        width: $full;
+                        border-radius: $on - 7;
+                        padding: $on;
+                        span{
+                            display: $flex;
+                            justify-content: $center;
+                        }
+                    }
+                    .socialMedia{
+                        text-align: $center;
+                            a{
+                                &:first-child{
+                                    margin-right: $on / 2;
+                                }
+                            }
+                    }
+                }
+        }
+}
+
+@media screen and (min-width: 281px) and (max-width: 800px){
+    #root{
+        .wrapper{
+            height: auto;
+            width: auto;
+            max-width: $full;
+        }
+    }
+}

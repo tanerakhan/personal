@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+@import './var';
+@import '../../node_modules/animate.css/animate.min.css';
+*{
+    margin:$zero;
+    padding: $zero;
+    box-sizing: border-box;
+    font-family: 'Thasadith', sans-serif;
+}
+
+html,body,#root{
+    height: $full;
+}
+
+img{display: block; max-width: $full / 2;}
