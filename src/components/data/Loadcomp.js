@@ -7,17 +7,13 @@ const override = css`
     border-color: red;
 `;
 
-export default class Loadcomp extends React.Component {
-    render() {
+export default function Loadcomp() {
         return(
         <HashLoader
-                className={override}
+          className={override}
           sizeUnit={"px"}
           size={150}
           color={'#123abc'}
             />
-
-
         )
-    }
 }

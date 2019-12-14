@@ -1,19 +1,15 @@
-import React, { Component,Fragment } from 'react'
+import React from 'react'
 
-export default class Footer extends Component {
-    render() {
-        const footerStyle = {
-            position: 'absolute',
-            bottom: '0',
-            left: '50%',
-            transform: 'translate(-50%)',
-            pageBreakInside: 'avoid',
-            wordWrap: 'break-word'
-        }
-        return (
-            <Fragment>
-                <div style={footerStyle}><span style={{fontFamily: 'monospace',fontSize: '12px', color:'#515151'}}>version 0.0.2</span></div>
-            </Fragment>
-        )
-    }
+export default function Footer() {
+                return <div style={footerStyle}><span style={{fontFamily: 'monospace',fontSize: '12px', color:'#fff'}}>version 0.0.3</span></div>
+}
+
+const footerStyle = {
+    position: 'absolute',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    pageBreakInside: 'avoid',
+    wordWrap: 'break-word',
+    zIndex: '10',
+    bottom: '5px',
 }

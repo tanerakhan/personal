@@ -4,27 +4,22 @@ import { SocialIcon } from 'react-social-icons';
 import Loadcomp from './Loadcomp'
 
 class Data extends React.Component{
-
 state= {
     users: [],
     loading: true
 }
-    
     componentDidMount (){
         setTimeout(() => {
             axios.get('https://api.github.com/users/tanerakhan')
             .then(users => users.data)
             .then(users => {
-                console.log(users)
                 this.setState({
                    users,
                    loading:false
                 })
             })
         }, 3000)
-        
     }
-    
 render(){
     const dataWrapper = "getData";
     const avatar = "avatar";
